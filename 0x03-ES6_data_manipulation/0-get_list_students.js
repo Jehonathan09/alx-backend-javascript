@@ -1,15 +1,12 @@
-export function getListStudents(id, firstName, location) {
-	const student = {}; //empty student object
-	let array = []; //array to store object
-
-	student.id = id;
-	student.firstName = firstName;
-	student.location = location;
-
-	//Push student object to array
-	array.push(student);
-
-	return array;
+/**
+ * Retrieves a list of students.
+ * @returns {{id: Number, firstName: String, location: String}[]}
+ */
+export default function getListStudents() {
+  return [
+    { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
+    { id: 2, firstName: 'James', location: 'Columbia' },
+    { id: 5, firstName: 'Serena', location: 'San Francisco' },
+  ];
 }
-
 
